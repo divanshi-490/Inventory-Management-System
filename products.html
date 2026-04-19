@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h2>Inventory System</h2>
+  <div>
+    <a href="/dashboard"><button>Dashboard</button></a>
+    <a href="/products"><button>Products</button></a>
+    <a href="/reports"><button>Reports</button></a>
+    <a href="/settings"><button>Settings</button></a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+
+<h2>Product Management</h2>
+
+<div class="form">
+  <h3>Add Product</h3>
+
+  <input id="name" placeholder="Name">
+  <input id="price" placeholder="Price">
+  <input id="quantity" placeholder="Quantity">
+  <input id="category" placeholder="Category">
+  <input id="unit" placeholder="Unit">
+
+  <br>
+  <button onclick="addProduct()">Add Product</button>
+</div>
+
+<h3>Product List</h3>
+<div id="list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>(product.html)
