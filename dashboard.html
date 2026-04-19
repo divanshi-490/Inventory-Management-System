@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h2>Inventory System</h2>
+  <div>
+    <a href="/dashboard"><button>Dashboard</button></a>
+    <a href="/products"><button>Products</button></a>
+    <a href="/reports"><button>Reports</button></a>
+    <a href="/settings"><button>Settings</button></a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<div class="grid">
+
+  <div class="card">
+    <h3>Total Products</h3>
+    <span id="total" style="font-size:24px;">0</span>
+  </div>
+
+  <div class="card">
+    <h3>Quick Action</h3>
+    <a href="/products">
+      <button>Manage Products</button>
+    </a>
+  </div>
+
+</div>
+
+<br>
+
+<div class="card">
+  <h3>Recent Activity</h3>
+  <p>All product updates will reflect from product page.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>(dashboard.html)
